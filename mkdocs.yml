@@ -6,8 +6,7 @@ theme:
     - content.tabs
 
 nav:
-  - 日语单语合成: index.md
-  - 跨语言中文合成: index2.md
+  - vits合成不同数据集对比: index.md
   # 在这里添加更多页面，如果需要
 
 extra:
