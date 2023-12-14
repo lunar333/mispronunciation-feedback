@@ -1,4 +1,4 @@
-site_name: bert-vits2 合成效果对比 vits
+site_name: 探究vits不同数据集对合成效果以及微调的效果的影响
 
 theme:
   name: material
@@ -6,7 +6,7 @@ theme:
     - content.tabs
 
 nav:
-  - vits合成不同数据集对比: index.md
+  - 不同数据vits合成效果对比: index.md
   # 在这里添加更多页面，如果需要
 
 extra:
