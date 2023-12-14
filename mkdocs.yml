@@ -1,0 +1,16 @@
+site_name: bert-vits2 合成效果对比 vits
+
+theme:
+  name: material
+  features:
+    - content.tabs
+
+nav:
+  - 日语单语合成: index.md
+  - 跨语言中文合成: index2.md
+  # 在这里添加更多页面，如果需要
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/lunar333/vits-japanese-finetune.git
