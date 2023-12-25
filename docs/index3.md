@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 |  角色  | 测试文本  |   xmla  |   unclean_xmla |
 |:-------------:|:----------------------------:|:----------------:|:---------------------:|
 | Oo橙子oO | 如今听到许诺这么说，他心头一紧：“你喜欢他？”“其实我跟他更多的是亲情，”许诺说，“我们从小一块长大，知根知底，现在又是合伙人，如果非要找个人结婚的话，他是一个不错的选择。”李晏清差点脱口而出，我们也认识很久了，我也是一个不错的选择。但他理智还在，她跟他认识再久，也比不上与她青梅竹马的师兄。| <audio controls><source src="https://lunar333.github.io/vits-compare/audio/1_xmla.wav" type="audio/mpeg"></audio> | <audio controls><source src="https://lunar333.github.io/vits-compare/audio/1_unclean.wav" type="audio/mpeg"></audio> |
