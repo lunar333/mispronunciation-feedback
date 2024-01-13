@@ -6,9 +6,7 @@ theme:
     - content.tabs
 
 nav:
-  - 不同数据vits合成效果对比: index.md
-  - 微调效果对比: index2.md
-  - unclean合成效果对比: index3.md
+  - mispronunciation-feedback: index.md
   # 在这里添加更多页面，如果需要
 
 extra:
