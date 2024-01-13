@@ -1,4 +1,4 @@
-site_name: 探究vits不同数据集对合成效果以及微调的效果的影响
+site_name: different method of mispronunciation feedback
 
 theme:
   name: material
