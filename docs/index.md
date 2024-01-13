@@ -2,14 +2,27 @@
 hide:
   - toc
 ---
-####  都是跑了40万步的结果
-####  训练时候，去掉了音频小于100条的说话人，大于100条音频的说话人，会被切割成多个100条音频的说话人
-####  简单来说，就是每个说话人都是100条音频进行训练，目的是为了在微调时候，微调也是100条，可以保持训练和微调的一致，看看能不能带来效果的提升
-|  角色  | 测试文本  |   原神  |   原神+xmla |
-|:----------------------------:|:---------:|:----------------:|:---------------------:|
-| 甘雨 | 如今听到许诺这么说，他心头一紧：“你喜欢他？”“其实我跟他更多的是亲情，”许诺说，“我们从小一块长大，知根知底，现在又是合伙人，如果非要找个人结婚的话，他是一个不错的选择。”李晏清差点脱口而出，我们也认识很久了，我也是一个不错的选择。但他理智还在，她跟他认识再久，也比不上与她青梅竹马的师兄。| <audio controls><source src="./audio/1.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/1_clean.wav" type="audio/mpeg"></audio> |
-| 甘雨 | 望着测验魔石碑上面闪亮得甚至有些刺眼的五个大字，少年面无表情，唇角有着一抹自嘲，紧握的手掌，因为大力，而导致略微尖锐的指甲深深的刺进了掌心之中，带来一阵阵钻心的疼痛。| <audio controls><source src="./audio/2.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/2_clean.wav" type="audio/mpeg"></audio> |
-| 甘雨 | 周围传来的不屑嘲笑以及惋惜轻叹，落在那如木桩待在原地的少年耳中，恍如一根根利刺狠狠的扎在心脏一般，让得少年呼吸微微急促。| <audio controls><source src="./audio/3.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/3_clean.wav" type="audio/mpeg"></audio> |
-| 可莉 | 在那一片投射着被柳树枝叶切割而开的明亮光斑的空地中，数百道身影静静盘坐，这是一群略显青涩的少年少女，而此时，他们都是面目认真的微闭着双目，鼻息间的呼吸，呈现一种极有节奏之感，而随着呼吸的吐纳，他们的周身，仿佛是有着肉眼难辨的细微光芒出现。| <audio controls><source src="./audio/4.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/4_clean.wav" type="audio/mpeg"></audio> |
-| 可莉| 石台下，一些少年突然悄悄的睁开眼睛，他们望着石台上那少年周身的光芒，皆是忍不住的舔舔嘴，脸庞上露出了一些羡慕钦佩之色，而后那股安静便是被他们的窃窃私语声开始打破。| <audio controls><source src="./audio/5.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/5_clean.wav" type="audio/mpeg"></audio> |
-| 可莉 | 众多少年少女面面相觑，这事情在北灵院甚至整个北灵境也不算什么秘密，他们在对此感到遗憾的同时，又相当的好奇，他们很想知道，究竟是因为什么原因，这个出色得让同样有着几分傲气的他们都信服的牧哥，竟然会被那“灵路”主动的驱逐出来。| <audio controls><source src="./audio/6.wav" type="audio/mpeg"></audio> | <audio controls><source src="./audio/6_clean.wav" type="audio/mpeg"></audio> |
+### 
+
+| 角色 | 跟读文本 | 正确音素 | 实际音素 | chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:----:|:-------:|:--------:|:--------:|:---:|:---:|:--------:|
+|TXHC_arctic_a0103|but there came no promise from the bow of the canoe         |  sil b ah t dh eh r k ey m n ow p r aa m ah s f r ah m dh ah b ow ah v dh ah k ah n uw sil        |    sil b ah sil dh eh r k eh m n ao p w aa m ah s f r ah n dh ah b ao ah v dh ah k ah n uw sil      | 在您提供的正确音素和实际音素之间，存在几处发音不准确的情况。我将逐一解释并给出改正的建议：\n\n1. /t/ 音缺失：在单词 \"but\" 的尾音 /t/ 在实际发音中缺失了。\n   - 建议：不要省略词尾的停顿音，如 /t/。发音时，将舌尖轻轻放在上齿背后，并迅速阻断气流，然后突然释放，形成明显的停顿。\n\n2. /ow/ 和 /ao/ 音的误用：在 \"no\" 和 \"bow\" 这两个单词中，/ow/ 发音错误地被发成了 /ao/。\n   - 建议：/ow/ 是一个双元音，开始时类似于 /oʊ/，然后嘴唇要从半圆形往前推进成圆形。确保这个动作流畅，注意不要过度拉长元音或变成 /ao/。\n\n3. /r/ 与 /l/ 音的混淆：在 \"promise\" 的词尾，应当发 /s/ 而不是 /z/，在实际发音中， /r/ 的音被省略了。\n   - 建议：发 /r/ 音时，舌尖不要触碰上颚，而是让它微微上卷，气流从两侧经过。对于 /l/，确保舌尖触碰上齿龈，形成明确的 /l/ 音。\n\n4. /m/ 与 /n/ 音的错误：在 \"from\" 的实际发音中，词尾的 /m/ 音被发成了 /n/ 音。\n   - 建议：/m/ 是双唇音，发音时闭上双唇，让气流通过鼻腔；而 /n/ 是舌尖音，发音时舌尖触碰上齿龈，确保通过鼻腔的气流。\n\n注意这些音素的特点和发音方式，在练习时可以用录音设备录下自己的声音，然后重复对比原音，不断调整直至接近标准发音。此外，可以使用一些专业的语音分析软件来细致分析自己的发音误差，并进行针对性训练。多听多模仿也是提高发音准确性的有效方法。最重要的是要有耐心和毅力，不断实践和纠正，逐步提高发音水平。 |  对于跟读文本：但是从独木舟的弓形部分并没有传来任何承诺。   |    跟读文本精准反馈：\n1. 单词 \"came\" 的正确读音应该是 /keɪm/，你发音为 /kɛm/，出现了替换错误。为了改进，请你试着将嘴唇拉长，并将舌头抬到中高的位置。\n2. 单词 \"promise\" 的正确发音为 /ˈprɑː.mɪs/，而你发音成了 /ˈpwɑː.mɪs/，这同样是一个替换错误。改正这个错误，需要你稍微减少嘴唇的圆度，让舌头保持中性位置，并且将舌尖抬到高位。\n3. 单词 \"from\" 正确的读音是 /frɒm/，你却发音为 /frɒn/，发生了替换错误。请把嘴唇闭上一些，并将舌头降到中间的位置。      |
+|TXHC_arctic_b0048|he looked like one who had passed through an uncomfortable hour or two         |          |          |     |     |          |
+|TXHC_arctic_a0059|         |          |          |     |     |          |
+|TXHC_arctic_b0416|         |          |          |     |     |          |
+|TXHC_arctic_a0120|         |          |          |     |     |          |
+|TXHC_arctic_b0415|         |          |          |     |     |          |
+|TXHC_arctic_a0040|         |          |          |     |     |          |
+|TXHC_arctic_a0020|         |          |          |     |     |          |
+|TXHC_arctic_a0027|         |          |          |     |     |          |
+|TXHC_arctic_a0010|         |          |          |     |     |          |
+|TXHC_arctic_a0112|         |          |          |     |     |          |
+|TXHC_arctic_a0028|         |          |          |     |     |          |
+|TXHC_arctic_a0129|         |          |          |     |     |          |
+|TXHC_arctic_a0131|         |          |          |     |     |          |
+|TXHC_arctic_b0483|         |          |          |     |     |          |
+|TXHC_arctic_a0089|         |          |          |     |     |          |
+|TXHC_arctic_a0032|         |          |          |     |     |          |
+|TXHC_arctic_a0078|         |          |          |     |     |          |
+|TXHC_arctic_a0073|         |          |          |     |     |          |
+|TXHC_arctic_a0576|         |          |          |     |     |          |
