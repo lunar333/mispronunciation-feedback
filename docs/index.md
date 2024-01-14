@@ -2,6 +2,9 @@
 hide:
   - toc
 ---
+## chatgpt指的是直接将跟读文本，正确音素和实际音素输给chatgpt，让chatgpt对其进行分析给出反馈。chatgpt+viterbi指的是将维特比算法找出的可能出现的错误，通过文本的形式输给chatgpt，然后再给出反馈。chatgpt+viterbi+articulatory feature指的是先通过维特比算法得到可能出现的错误，然后里面的替换错误，会通过发音属性，得到更具体的反馈。通过文本的形式输给chatgpt，最后再给出反馈。
+
+
 ### demo1 
 | 角色 | 跟读文本 |
 |:----:|:-------:|
