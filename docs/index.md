@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-## chatgpt指的是直接将跟读文本，正确音素和实际音素输给chatgpt，让chatgpt对其进行分析给出反馈。chatgpt+viterbi指的是将维特比算法找出的可能出现的错误，通过文本的形式输给chatgpt，然后再给出反馈。chatgpt+viterbi+articulatory feature指的是先通过维特比算法得到可能出现的错误，然后里面的替换错误，会通过发音属性，得到更具体的反馈。通过文本的形式输给chatgpt，最后再给出反馈。有一些替换错误，可能发音属性分析不是很适合，那些错误直接去掉了，所以可能会出现有的错误，在chatgpt+viterbi当中出现了，但是在chatgpt+viterbi+articulatory feature中没有出现。
+### chatgpt指的是直接将跟读文本，正确音素和实际音素输给chatgpt，让chatgpt对其进行分析给出反馈。chatgpt+viterbi指的是将维特比算法找出的可能出现的错误，通过文本的形式输给chatgpt，然后再给出反馈。chatgpt+viterbi+articulatory feature指的是先通过维特比算法得到可能出现的错误，然后里面的替换错误，会通过发音属性，得到更具体的反馈。通过文本的形式输给chatgpt，最后再给出反馈。有一些替换错误，可能发音属性分析不是很适合，那些错误直接去掉了，所以可能会出现有的错误，在chatgpt+viterbi当中出现了，但是在chatgpt+viterbi+articulatory feature中没有出现。
 
 
 ### demo1 
@@ -92,3 +92,123 @@ hide:
 | chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
 |:-------:|:---------------:|:-----------------------------------:|
 | 确实，根据您提供的音素拼写对比，可以发现以下几点发音上的差异：<br><br>1. \"foot\" 的正确音标应该是 /fʊt/，而您给出的实际发音是 /fʌt/。<br>2. \"feels\" 中的 /l/ 在错误发音中被遗漏了。<br>3. \"like\" 的 /k/ 在错误发音中被 /l/ 替换了。<br>4. \"that\" 的 /t/ 在错误发音中被发为 /l/。<br>5. 另外，\"debutante\" 中的 /b/ 在错误发音中似乎被 /d/ 替换了，这是不正确的。<br><br>针对这些错误，以下是我的一些建议：<br><br>- 对于 \"foot\" 的发音，应该注意圆唇短元音 /ʊ/，它不像 /ʌ/ 那样打开口部。<br>- 在发 \"feels\" 这个词时，确保舌尖在上牙龈后方轻触以发出清晰的 /l/ 音。<br>- 对 \"like\" 单词中的 /k/ 音要有强烈的爆破声，避免被 /l/ 替换。<br>- 对 \"that\" 中的 /t/ 声音保持清晰，确保不要用 /l/ 来代替。<br>- \"debutante\" 这个词较复杂，需要练习其音节之间的连贯性，特别是注意不要将 /b/ 发音成 /d/。<br><br>发音的精确性是通过反复练习和模仿正确发音来培养的。您可以利用语音识别软件来帮助检测发音准确性，或者请教母语为英语的人进行纠正。또한，多听英语材料，如新闻、电影、播客等，有助于提高您的语音和语调。在实际练习时，可以放慢速度，分解每个单词的发音，确保每个音素都发准确，然后再逐渐加速到正常语速。 | 关于跟读文本 \"my right foot feels like that of a chinese debutante\" 的反馈：<br><br>1. 单词 \"foot\" 的正确读音应该是 [f uh t]，你读成了 [f uw t]，把中间的音节读错了。<br>2. 单词 \"feels\" 的正确读音应该是 [f iy l z]，而你读成了 [f iy l s]，最后一个音 \"z\" 读成了 \"s\"。<br>3. 单词 \"that\" 的正确读音应该是 [dh ae t]，但你读成了 [dh ae l]，把最后一个音 \"t\" 读成了 \"l\"。 | 对于跟读文本：my right foot feels like that of a Chinese debutante<br><br>1. 单词 \"foot\":<br>   - 正确读音：/fʊt/ （发音类似于\"福特\"中的\"福\"，但是要短促一些。）<br>   - 你的发音：/fuːt/（听起来像\"富特\"中的\"富\"。）<br>   - 改正建议：读音时嘴唇不要太圆，舌头保持中高位，发出/ʊ/的音（类似汉语拼音\"乌\"的发音，但短促）。尝试练习这个音的发音，并注意让它更短促。<br><br>2. 单词 \"feels\":<br>   - 正确读音：/fiːlz/ （发音时\"i\"的音要拉长，并且\"l\"之后要加上声音，类似于\"费力\"中的\"费\"）<br>   - 你的发音：/fiːls/（音尾缺少了/z/的声音震动）<br>   - 改正建议：在发出\"l\"音后，增加声带的震动，来发出/z/的声音。可以练习\"bees\"（蜜蜂的复数）的复数发音感受一下这个声带震动的感觉。 |
+
+---
+
+### demo6
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo7
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo8
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo9
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo6
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo6
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo10
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
+
+---
+
+### demo10
+| 角色 | 跟读文本 |
+|:----:|:-------:|
+| TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante |
+
+| 正确音素 | 实际音素 |
+|:-------:|:-------:|
+| sil m ay r ay t f uh t f iy l z l ay k dh ae t ah v ah ch ay n iy z d eh b y ah t aa n t sil | sil m ay r ay t f uw t f iy l s l ay k dh ae l ah v ah ch ay n iy z d eh b y ah t aa n t sil|
+
+| chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
+|:-------:|:---------------:|:-----------------------------------:|
+|  |  |  |
