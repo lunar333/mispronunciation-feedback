@@ -7,7 +7,7 @@ hide:
 
 ### demo1 
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0103 | but there came no promise from the bow of the canoe | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/1.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -22,7 +22,7 @@ hide:
 
 ### demo2
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_b0048 | he looked like one who had passed through an uncomfortable hour or two | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/2.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -37,7 +37,7 @@ hide:
 
 ### demo3
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0059 | his immaculate appearance was gone| <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/3.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -52,7 +52,7 @@ hide:
 
 ### demo4
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_b0416 | i arose obediently and went down the beach | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/4.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -67,7 +67,7 @@ hide:
 
 ### demo5
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0120 | my right foot feels like that of a chinese debutante | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/5.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -82,7 +82,7 @@ hide:
 
 ### demo6
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_b0415 | there was nothing for us but the wide raw ocean | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/6.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -97,7 +97,7 @@ hide:
 
 ### demo7
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0040 | i suppose you wonder why she is coming up here | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/7.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -112,7 +112,7 @@ hide:
 
 ### demo8
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0020 | clubs and balls and cities grew to be only memories | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/8.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
@@ -131,7 +131,7 @@ hide:
 | TXHC_arctic_a0027 | to my surprise he began to show actual enthusiasm in my favor | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/9.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 | 音频 |
-|:-------:|:-------:|
+|:-------:|:-------:|:-------:|
 | sil t uw m ay s ah p r ay z hh iy b iy g ae n t ah sh ow sil ae k sh ah l ih n th uw z iy ae z ah m ih n m ay f ey v er sil | sil t uw m ay s ah p r ay s hh iy b iy g ae n t ah sh ow sil ae k sh ah l ih n s uw z iy ae s ah sil iy ng m ay f ey v er sil|
 
 | chatgpt | chatgpt+viterbi | chatgpt+viterbi+articulatory feature |
@@ -142,7 +142,7 @@ hide:
 
 ### demo10
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-------:|
 | TXHC_arctic_a0010 | i'm playing a single hand in what looks like a losing game | <audio controls><source src="https://lunar333.github.io/mispronunciation-feedback/audio/10.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 |
