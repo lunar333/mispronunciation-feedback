@@ -127,7 +127,7 @@ hide:
 
 ### demo9
 | 角色 | 跟读文本 | 音频 |
-|:----:|:-------:|
+|:----:|:-------:|:-----------------------------------:|
 | TXHC_arctic_a0027 | to my surprise he began to show actual enthusiasm in my favor | <audio controls><source src="https://lunar333.github.io/vits-compare/audio/l2_9.wav" type="audio/mpeg"></audio> |
 
 | 正确音素 | 实际音素 | 音频 |
